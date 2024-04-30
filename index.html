@@ -1,26 +1,17 @@
 <!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset='utf8'>
-    </head>
-    <body>
-        <div id='ruffle'></div>
-        <script src='ruffle/ruffle.js'></script>
-        <script>
-var swfobject = {};
 
-swfobject.embedSWF = function(url, cont, width, height){
-    var ruffle = window.RufflePlayer.newest(),
-        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
-            width: width,
-            height: height,
-            style: 'width: ' + width + 'px; height: ' + height + 'px',
-        });
-    
-    player.load({ url: url });
-}
+<head>
+    <title>FlashGamesWeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-swfobject.embedSWF('https://flashgamesweb.github.io/games/newintro.swf', 'ruffle', 500, 500);
-        </script>
-    </body>
-</html>
+<body>
+    <div class="main">
+        <h2>FlashGamesWeb</h2>
+        <p>Collection of Flash games powered by <a href="https://ruffle.rs">Ruffle</a></p>
+        <h3>Why?</h3>
+        <p>I was bored. That's all.</p>
+        <h3>How?</h3>
+        <p><a href="https://ruffle.rs">RUFFLE [dot] RS</a></p>
+    </div>
+</body>
