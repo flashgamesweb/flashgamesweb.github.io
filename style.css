@@ -46,8 +46,6 @@ a {
 }
 
 ruffle-player {
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: 16px 50%;
+    transform: translate(-50%);
 }
