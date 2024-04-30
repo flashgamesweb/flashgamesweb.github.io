@@ -2,6 +2,7 @@ body {
     font-family: Tahoma;
     background: #888;
     width: 100%;
+    overflow-x: hidden;
     margin: 0;
     height: 100%;
 }
