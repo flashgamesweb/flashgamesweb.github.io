@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Firey's Candy Bar Adventure - FlashGamesWeb</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <a href="../">home</a> |
+            <a href="../games">games</a> |
+            <a href="../about">about</a>
+        </div>
+        <div id='ruffle'></div>
+        <script src='../ruffle/ruffle.js'></script>
+        <script>
+            var swfobject = {};
+
+            swfobject.embedSWF = function (url, cont, width, height) {
+                var ruffle = window.RufflePlayer.newest(),
+                    player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+                        width: width,
+                        height: height,
+                        style: 'width: ' + width + 'px; height: ' + height + 'px',
+                    });
+
+                player.load({ url: url });
+            }
+
+            swfobject.embedSWF('https://flashgamesweb.github.io/swf/fcba.swf', 'ruffle', 800, 600);
+        </script>
+        <h2>Firey's Candy Bar Adventure</h2>
+        <p>TBA</p>
+        <p><b>Origin:</b> HTwins</p>
+    </div>
+</body>
+
+</html>
